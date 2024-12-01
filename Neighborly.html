@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighborly</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://www.thinkglink.com/wp-content/uploads/2011/09/neighborhood.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Overlay for darkening background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    /* Banner styles */
+    .banner {
+      background-image: url('https://media.giphy.com/media/3o7TKJNFVZ4xCMriFy/giphy.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 32px;
+      font-weight: bold;
+      border-bottom: 5px solid #000000;
+    }
+
+    /* Accordion container */
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    /* Style for each tab */
+    .accordion-item {
+      border: 2px solid #8d750c;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Hover effect for accordion item */
+    .accordion-item:hover {
+      background-color: #e6f7ff;
+      transform: scale(1.02);
+    }
+
+    /* Accordion header */
+    .accordion-header {
+      padding: 15px;
+      background-color: #dba8a8;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    /* Accordion content */
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 15px;
+      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      background-color: #fff;
+    }
+
+    /* Show content on hover */
+    .accordion-item:hover .accordion-content {
+      max-height: 300px; /* Arbitrary max height; adjust as needed */
+      padding: 15px;
+    }
+
+    /* News and additional sections */
+    .news, .body-text {
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    /* Footer styles */
+    .footer {
+      margin: 20px auto;
+      max-width: 800px;
+      text-align: center;
+      padding: 15px;
+      background-image: url('https://i.gifer.com/AIHJ.gif');
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer a {
+      color: #9e30a1;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .banner {
+        font-size: 24px;
+        padding: 30px 10px;
+      }
+
+      .news, .body-text, .footer {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">Welcome to Neighborly</div>
+
+  <!-- Accordion Structure -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">About Us</div>
+      <div class="accordion-content">
+        <p>At Neighborly, we believe in bringing trust and community back to the heart of cryptocurrency. In a space often dominated by fleeting trends and hype, Neighborly stands as a beacon for meaningful connections and shared purpose.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">Our Mission</div>
+      <div class="accordion-content">
+        <p>We're redefining what a crypto currency can mean to communities and attempting to bring more of the politeness and respect that is valued in other investment groups. Unlike some currencies that are solely based on profit, we are building a platform that prioritizes trust, inclusivity, and long term value. Entailing shared growth and success as well as aligned values and goals among shareholders. While aiming to have a meaningful impact spreading positive values among the crypto space, it would be ideal for everyone to leave a prime example for future developers in the market. These benefits possessed by the community will not only create a more fulfilling experience but also lay the foundation for a stable, enduring, investment.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">Our Promises</div>
+      <div class="accordion-content">
+        <p>We are ensuring your security and will be here to deal with concerns, With our support telegram with live admins 24/7 and regular information updates on our website. As well ensuring liquidity locks amongst different marketcaps ensures that bot activity will be much less effective and to provide further transparency to our community. With verified audits and our hunger and strive for the prosperity of our communities safety we won’t stop at any lengths to ensure the market and your peace of mind are taken care of at the highest standard. Because at the end of the day we are a community and we all want to keep each other safe and happy and enable growth.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <div class="news">
+    <h3>What We Offer</h3>
+    <ul>
+      <li>Up-to-date news and announcements.</li>
+      <li>Educational resources to help you stay informed.</li>
+      <li>Opportunities to connect and collaborate with like-minded individuals.</li>
+      <li>Being part of a crypto community like no other.</li>
+    </ul>
+  </div>
+
+  <!-- Additional Section -->
+  <div class="body-text">
+    <h3>Get Involved</h3>
+    <p>
+      We believe in the power of community and welcome your participation! Whether you're here to learn, 
+      share, or contribute, there's a place for you in our journey. Feel free to contact us or explore 
+      the links below to get started.
+    </p>
+  </div>
+
+  <!-- Footer with Links -->
+  <div class="footer">
+    <a href="https://t.me/+ZbnqJW4phgY2ODFh">Tele</a>
+    <a href="https://www.tiktok.com/@neighborly_coin?_t=ZT-8roOhjcNk6w&_r=1">Tik Tok</a>
+    <a href="https://x.com/Neighborly44927">X</a>
+    <a href="https://www.instagram.com/neighborly.sol/profilecard/">Instagram</a>
+  </div>
+
+</body>
+</html>
